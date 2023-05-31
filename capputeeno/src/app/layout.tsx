@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={saira.className}>
+			<body className={`${saira.className} bg-color`}>
 				<Header />
 				{children}
 			</body>
