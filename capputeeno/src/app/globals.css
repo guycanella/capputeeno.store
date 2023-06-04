@@ -18,6 +18,10 @@ body {
 	overflow-x: hidden;
 }
 
+li {
+	list-style-type: none;
+}
+
 .bg-color {
 	background-color: var(--bg-color);
 }

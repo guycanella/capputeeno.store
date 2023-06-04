@@ -1,6 +1,16 @@
-import Image from 'next/image'
+'use client'
+
+import Categories from '@/components/Categories/Categories'
 import styles from './page.module.css'
+import { useProducts } from '@/context/products-context'
 
 export default function Home() {
-	return <main className={styles.main}>Hello world</main>
+	const { allProducts } = useProducts()
+
+	return (
+		<main className={styles.main}>
+			<Categories />
+			<p>{JSON.stringify(allProducts, null, 2)}</p>
+		</main>
+	)
 }
